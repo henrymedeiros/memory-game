@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+  --bg-color: #222831;
+  --board-color: #EEEEEE;
+  --card-color: #00ADB5;
+  --match-color: #5FD068;
+  --unmatch-color: #D72323;
+  --flipped-color: #F08A5D;
+}
+
+body{
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@-webkit-keyframes spinnow {
+  100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinnow {
+  100% {
+      transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spinnow {
+  100% {
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+  }
+}
+
+#react-icon{
+  font-size: 64px;
+  font-weight: regular;
+  color: var(--card-color);
+  animation: 5s spinnow infinite linear;
+}
+
+h2{
+  margin-top: 0;
+}

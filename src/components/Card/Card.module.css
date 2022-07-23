@@ -1,0 +1,36 @@
+
+
+.Card{
+    width: 84px;
+    height: 84px;
+    background-color:var(--card-color);
+    line-height: 84px;
+    text-align: center;
+    border-radius: 8px;
+    transform: rotateY(180deg);
+	transform-style: preserve-3d;
+	transition: transform .3s ease;
+    font-size: 0;
+    cursor: pointer
+}
+
+.FlippedCard{
+    background-color: var(--flipped-color);
+    transform: rotateY(0);
+	cursor: default;
+    font-size: inherit;
+}
+
+.Matched{
+    background-color: var(--match-color) !important;
+    transform: rotateY(0);
+	cursor: default;
+    font-size: inherit;
+}
+
+.Unmatched{
+    background-color: var(--unmatch-color)!important;
+    transform: rotateY(0);
+	cursor: default;
+    font-size: inherit;
+}
